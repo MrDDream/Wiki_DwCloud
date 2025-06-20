@@ -2,7 +2,7 @@
 title: Introduction
 description: 
 published: true
-date: 2025-06-20T14:16:03.046Z
+date: 2025-06-20T14:26:28.730Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-20T13:35:03.394Z
@@ -38,7 +38,7 @@ Ce conteneur peut ensuite être "exécuté" sur n'importe quel ordinateur (déve
 Pour bien visualiser la différence, voici comment on peut se représenter un serveur.
 
 ### Le Monde d'Avant (Sans Docker)
-![avant_docker.png](/docker/avant_docker.png) width=200
+
 >
 > ```
 >  +-------------------------------------------+
