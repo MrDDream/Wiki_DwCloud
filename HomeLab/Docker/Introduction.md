@@ -2,7 +2,7 @@
 title: Introduction
 description: 
 published: true
-date: 2025-06-20T13:35:21.269Z
+date: 2025-06-20T14:08:13.938Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-20T13:35:03.394Z
@@ -10,8 +10,8 @@ dateCreated: 2025-06-20T13:35:03.394Z
 
 # Docker : Pourquoi et Comment ? Une Introduction
 
-> [!INFO] Pour les débutants
 > Cet article est conçu pour toute personne qui entend parler de Docker et se demande à quoi cela sert concrètement. Nous allons utiliser des analogies simples pour rendre le concept aussi clair que possible.
+{.is-info}
 
 Imaginez cette situation, très fréquente en informatique : un développeur crée une application sur son ordinateur. Tout fonctionne parfaitement. Il la donne ensuite à son collègue pour la tester, ou la déploie sur un serveur pour la rendre accessible aux utilisateurs. Et là, c'est le drame : l'application ne se lance pas, ou affiche des erreurs étranges.
 
@@ -37,7 +37,7 @@ Ce conteneur peut ensuite être "exécuté" sur n'importe quel ordinateur (déve
 
 Pour bien visualiser la différence, voici comment on peut se représenter un serveur.
 
-> [!DANGER] Le Monde d'Avant (Sans Docker)
+### Le Monde d'Avant (Sans Docker)
 >
 > ```
 >  +-------------------------------------------+
@@ -54,12 +54,13 @@ Pour bien visualiser la différence, voici comment on peut se représenter un se
 >  |                                           |
 >  |        SYSTÈME D'EXPLOITATION (Linux)      |
 >  +-------------------------------------------+
-> 
 > ```
->
-> **Problème :** Si l'Application A a besoin de la `Lib X v1.2` et que l'on met à jour vers la `v1.3` pour l'Application B, on risque de "casser" l'Application A. Tout est mélangé et fragile.
 
-> [!SUCCESS] Le Monde avec Docker
+> **Problème :** Si l'Application A a besoin de la `Lib X v1.2` et que l'on met à jour vers la `v1.3` pour l'Application B, on risque de "casser" l'Application A. Tout est mélangé et fragile.
+{.is-warning}
+
+
+### Le Monde avec Docker
 >
 > ```
 >  +-------------------------------------------+
@@ -73,12 +74,13 @@ Pour bien visualiser la différence, voici comment on peut se représenter un se
 >  |  | +-------------+ |  | +-------------+ | |
 >  |  +-----------------+  +-----------------+ |
 >  |                                           |
->  |         DOCKER      |      SYSTÈME (Linux) |
+>  |         DOCKER      |    SYSTÈME (Linux)  |
 >  +-------------------------------------------+
-> 
 > ```
->
+
 > **Solution :** Chaque application vit dans son propre conteneur, avec ses propres dépendances. Elles sont totalement **isolées** les unes des autres. On peut avoir des versions différentes de la même librairie sans aucun conflit.
+{.is-success}
+
 
 ## Les avantages concrets de Docker
 
@@ -102,5 +104,6 @@ Pour bien visualiser la différence, voici comment on peut se représenter un se
 
 * **Aujourd'hui** : Docker est devenu un standard de l'industrie pour le développement et le déploiement d'applications. L'entreprise a changé de nom pour devenir Docker, Inc. et l'écosystème autour des conteneurs (avec des outils comme Kubernetes) a explosé.
 
-> [!TIP] Pour conclure
 > Docker n'est pas une technologie magique, mais une manière intelligente de packager et de distribuer des logiciels. En standardisant "l'emballage", il a rendu la vie des développeurs et des administrateurs système beaucoup plus simple, plus rapide et plus fiable.
+{.is-info}
+
